@@ -323,6 +323,24 @@
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" data-modal-close><img src="./images/close.png" alt=""></button>
+            <h2 class="titel-form">Залиште свої дані, ми вам передзвонимо</h2>
+            <form>
+             <label for="name">Ім'я</label>
+             <input type="text" name="name" id="name"> 
+             <label for="phone">Телефон</label>  
+             <input type="tel" name="phone" id="phone">
+             <label for="email">Пошта</label>
+             <input type="email" name="email" id="email">
+            <label>
+            Коментар
+                <textarea name="feedback" rows="5" placeholder="Введіть текст"></textarea>
+            </label>
+            </br>
+             <input type="checkbox" name="accept" value="Погоджуюся з розсилкою та приймаю Умови договору" id="accept">
+            <label for="accept">Погоджуюся з розсилкою та приймаю Умови договору</label>
+            </br>
+             <button type="submit">Відправити</button>
+            </form>
         </div>
     </div>
 </footer>
