@@ -312,34 +312,62 @@
                             <use href="./images/sprite.svg#icon-linkedin"></use>
                         </svg>
                     </a>
+                   
                 </li>
             </ul>
         </div>
-        </li>
-        </ul>
-        
+        <div class="form-footer">
+        <h2>Підпишіться на розсилку</h2>
+        <form>
+        <label for="mail"></label>
+        <input type="email" name="mail" id="mail" placeholder="E-mail">
+        <button type="submit"><span class="button-text">Підписатися</span><span class="button-svg"><svg>
+            <use href="./images/sprite.svg#icon-icon-send"></use>
+        </svg></span></button>
+        </form>
         </div>
+        
+        
     </div>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button type="button" data-modal-close><img src="./images/close.png" alt=""></button>
-            <h2 class="titel-form">Залиште свої дані, ми вам передзвонимо</h2>
-            <form>
-             <label for="name">Ім'я</label>
-             <input type="text" name="name" id="name"> 
-             <label for="phone">Телефон</label>  
-             <input type="tel" name="phone" id="phone">
-             <label for="email">Пошта</label>
-             <input type="email" name="email" id="email">
-            <label>
-            Коментар
-                <textarea name="feedback" rows="5" placeholder="Введіть текст"></textarea>
-            </label>
-            </br>
-             <input type="checkbox" name="accept" value="Погоджуюся з розсилкою та приймаю Умови договору" id="accept">
-            <label for="accept">Погоджуюся з розсилкою та приймаю Умови договору</label>
-            </br>
-             <button type="submit">Відправити</button>
+            <button type="button" class="modal-button" data-modal-close><svg class="img-close">
+                <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+            </button>
+            
+            <form class="form">
+            <b class="titel-form">Залиште свої дані, ми вам передзвонимо</b>
+            <p class="form-field">
+                <label for="name">Ім'я</label>
+                <input type="text" name="name" id="name">
+                <svg>
+                    <use href="./images/sprite.svg#icon-person-form"></use>
+                </svg>
+            </p>
+             
+            <p class="form-field"><label for="phone">Телефон</label>
+            <input type="tel" name="phone" id="phone">
+        <svg>
+            <use href="./images/sprite.svg#icon-phone-form"></use>
+        </svg></p>
+           
+            <p class="form-field"><label for="email">Пошта</label>
+            <input type="email" name="email" id="email">
+        <svg>
+            <use href="./images/sprite.svg#icon-email-form"></use>
+        </svg> </p>
+           
+            <p class="form-field"><label for="coment">Коментар</label>
+            <textarea name="feedback" id="coment" rows="5" placeholder="Введіть текст"></textarea></p>
+             
+            
+            <p class="form-accept">
+                
+          
+            <label for="accept" class="accept-label"><input type="checkbox" class="chekbox" name="accept" id="accept">
+            <span class="checkbox-icon"></span><span class="checkbox-span">Погоджуюся з розсилкою та приймаю </span><a href="">Умови договору</a> </label></p>
+            <button type="submit" class="form-button">Відправити</button>
             </form>
         </div>
     </div>
